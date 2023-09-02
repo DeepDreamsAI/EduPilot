@@ -1,6 +1,6 @@
 # EduPilot
 
-EduPilot is an educational platform that allows users to determine thier interest. This README provides information on how to install and use the application, as well as details on user authentication features.
+EduPilot is an educational platform that allows users to determine their interests. This README provides information on how to install and use the application and details on user authentication features.
 
 ## Installation
 
@@ -9,7 +9,7 @@ To install EduPilot, follow these steps:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/EduPilot.git
+   (https://github.com/DeepDreamsAI/EduPilot.git)
 Change your working directory to the project folder:
 
 bash
