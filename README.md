@@ -25,6 +25,6 @@ EduPilot provides user authentication features, including:
 
 Login: Users can log in to their accounts by providing their credentials.
 
-Signup: New users can create an account by providing necessary information.
+Signup: New users can create an account by providing the necessary information.
 
 Signout: Users can securely sign out of their accounts.
