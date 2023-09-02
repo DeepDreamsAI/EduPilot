@@ -1,0 +1,68 @@
+.nav-main-con {
+  background-color: #111827;
+  width: 100%;
+  padding: 2rem 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* background-image: linear-gradient(to right, #f1a7f1, #fad0c4); */
+  /* background-image: linear-gradient(to right, #e5bdf6, #d8dede); */
+}
+.nav-logo {
+  color: #333333;
+  color: #fff;
+  /* color: #111827; */
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  font-size: 1.6rem;
+}
+
+.nav-left-menus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-right-menus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.menu-btn {
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  padding: 1rem 1.25rem;
+  background-color: #fcfbf5;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+
+  border-radius: 0.6rem;
+}
+
+.menu-btn-signin {
+  color: #000;
+  transition: background-color 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19),
+    color 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19), transform 0.1s;
+}
+.menu-btn-signup {
+  background-color: #000;
+  color: #fcfbf5;
+  transition: color 0.2s ease-in;
+}
+
+.nav-span {
+  font-size: 1.4rem;
+  color: #fcfbf5;
+  padding: 0.3rem 0.7rem;
+  margin-left: 0.8rem;
+  background-color: #3a6ff8;
+  border-radius: 0.5rem;
+}
