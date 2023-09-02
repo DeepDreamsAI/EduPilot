@@ -40,13 +40,4 @@ The AI Education Assistant is a project aimed at providing a personalized and li
 - **Frontend:** React
 - **Database:** MongoDB
 
-## Getting Started
 
-### Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-- Node.js and npm installed
-- MongoDB installed and running
-
-### Installation
