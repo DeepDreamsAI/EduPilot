@@ -1,0 +1,12 @@
+# Dependency directory
+node_modules/
+migrations/
+
+# Ignore built ts files
+dist/**/*
+
+# Coverage reports
+coverage
+
+# API keys and secrets
+.env
