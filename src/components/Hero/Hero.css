@@ -1,0 +1,67 @@
+.hero-main-con {
+  width: 70%;
+  text-align: center;
+  margin: 10rem auto 1rem auto;
+  /* margin-top: 1rem; */
+}
+.hero-title {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 9rem;
+  font-weight: 700;
+  letter-spacing: -0.2rem;
+  line-height: 8rem;
+  margin-bottom: 3rem;
+  /* color: #333333; */
+}
+
+.hero-desc {
+  width: 50%;
+  margin: 1rem auto;
+  text-align: center;
+  /* letter-spacing: -2rem; */
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.hero-btn-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-btn {
+  padding: 1.4rem 2rem;
+  border-radius: 0.6rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -0.01rem;
+}
+
+.hero-btn-1 {
+  /* width: 10rem; */
+  /* border-radius: 0.6rem; */
+  color: #fcfbf5;
+  /* color: #000; */
+  background-color: #3aaef8;
+
+  transition: 0.2s ease-in;
+  /* font-size: 1.4rem; */
+  /* font-weight: 600; */
+}
+
+.hero-btn-2 {
+  color: #fcfbf5;
+  background-color: #000;
+}
+
+.hero-btn-span {
+  color: #fcfbf5;
+  padding: 0.5rem 1rem;
+  margin-left: 0.8rem;
+  background-color: #3a6ff8;
+  border-radius: 0.5rem;
+}
