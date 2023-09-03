@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const { storeChat } = require("../controllers/chat.controller");
+const { careerRecommendations } = require("../controllers/career.controller");
 
 // Define an endpoint to make the OpenAI API request
-router.post("/chat", storeChat);
+router.get("/career", careerRecommendations);
 
 module.exports = router;
