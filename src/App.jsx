@@ -5,13 +5,15 @@ import "./App.css";
 
 import Nav from "./components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
-import { ChakraProvider } from "@chakra-ui/react";
+import Chat from "./components/Chat/Chat";
+// import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
   return (
     <>
-      <Nav />
-      <Hero />
+      {/* <Nav />
+      <Hero /> */}
+      <Chat />
     </>
   );
 }

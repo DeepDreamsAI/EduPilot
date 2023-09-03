@@ -7,6 +7,14 @@ html {
   font-size: 10px;
   font-family: "Inter", sans-serif;
 }
+/* body {
+  background: linear-gradient(
+    to right,
+    rgb(38, 51, 61),
+    rgb(50, 55, 65),
+    rgb(33, 33, 78)
+  );
+} */
 ul {
   list-style: none;
 }
