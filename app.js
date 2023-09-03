@@ -5,7 +5,7 @@ const app = express();
 const authRoutes = require("./routes/auth");
 
 const MONGOURL =
-	"mongodb+srv://tempacc_26:toor@cluster0.hclx7.mongodb.net/EduPilot";
+	"MONGODB_URL";
 
 app.use((req, res, next) => {
 	res.setHeader("Access-Control-Allow-Origin", "*");
