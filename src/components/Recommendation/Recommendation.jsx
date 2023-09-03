@@ -32,6 +32,9 @@ const Recommendation = () => {
             <Job />
             <Job />
             <Job />
+            <Job />
+            <Job />
+            <Job />
           </div>
         </div>
       </div>
