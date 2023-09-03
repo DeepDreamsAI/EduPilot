@@ -4,7 +4,7 @@
   gap: 2rem;
   flex-wrap: wrap;
   margin: 0 auto;
-  /* justify-content: space-between; */
+  justify-content: center;
 }
 
 .job-card {
