@@ -6,6 +6,7 @@ const cors = require("cors");
 
 const authRoutes = require("./routes/auth");
 const chatRoutes = require("./routes/chat.routes");
+const careerRoutes = require("./routes/career.routes");
 
 require("dotenv").config();
 
@@ -17,6 +18,7 @@ app.use(bodyParser.json());
 
 app.use("/", authRoutes);
 app.use("/", chatRoutes);
+app.use("/", careerRoutes);
 
 app.use((error, req, res, next) => {
   const status = error.statusCode || 500;
