@@ -20,6 +20,17 @@ const Chat = () => {
           <div className="chat-nav-icons">
             <h2 className="icon1">EduPilot</h2>
           </div>
+
+          <div className="message-main-con">
+            <div className="message-body message-body-left">
+              <p className="message-content">Sure, here is my answer</p>
+            </div>
+
+            <div className="message-body message-body-right">
+              <p className="message-content">Sure, here is my answer</p>
+            </div>
+          </div>
+
           <div className="chat-box">
             <input
               type="text"
