@@ -2,37 +2,39 @@ const bodyParser = require("body-parser");
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
+const cors = require("cors");
+
 const authRoutes = require("./routes/auth");
+const chatRoutes = require("./routes/chat.routes");
 
-const MONGOURL =
-	"MONGODB_URL";
+require("dotenv").config();
 
-app.use((req, res, next) => {
-	res.setHeader("Access-Control-Allow-Origin", "*");
-	res.setHeader(
-		"Access-Control-Allow-Methods",
-		"OPTIONS, GET, POST, PUT, PATCH, DELETE"
-	);
-	res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
-	next();
-});
+const URI = process.env.MONGOURL;
+const PORT = process.env.PORT;
+
+app.use(cors());
 app.use(bodyParser.json());
-app.use("/auth", authRoutes);
+
+app.use("/", authRoutes);
+app.use("/", chatRoutes);
 
 app.use((error, req, res, next) => {
-	const status = error.statusCode || 500;
-	const message = error.message;
-	const data = error.data;
-	res.status(status).json({ message, data });
-	console.log(message);
+  const status = error.statusCode || 500;
+  const message = error.message;
+  const data = error.data;
+  res.status(status).json({ message, data });
+  console.log(message);
 });
 
-mongoose
-	.connect(MONGOURL)
-	.then((result) => {
-		const server = app.listen(8080);
-		console.log("DB Connected");
-	})
-	.catch((err) => {
-		console.log(err);
-	});
+app.listen(PORT, () => {
+  console.log(`Server is running on PORT ${PORT}`);
+
+  mongoose
+    .connect(URI)
+    .then((result) => {
+      console.log("DB Connected");
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
